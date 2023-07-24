@@ -1,0 +1,1004 @@
+﻿html {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.thunderB{
+    z-index: 10;
+    position: absolute;
+    height: 600px;
+    width: 300px;
+    background: url('../images/Skill/thunderB.gif') no-repeat;
+    background-size: 80%;
+}
+#end_portal{
+  display: none;
+  z-index: 10;
+  position: absolute;
+  height: 1110px;
+  width: 230px;
+  background: url('../images/interface/End-Portal.png') no-repeat;
+  margin-top: -520px;
+}
+#subtitles{
+	display: none;
+	height: 2000px;
+    width: 700px;
+	margin: 0 auto;
+	text-align: center;
+}
+/* ЭЛЕМЕНТАЛЬНЫЕ СКИЛЛЫ */
+.fireball_skill{
+    z-index: 10;
+    position: absolute;
+    height: 60px;
+    width: 120px;
+    background: url('../images/Skill/FireBall.gif') no-repeat;
+    background-size: 100%;
+  }
+  .rain_skill{
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('../images/Skill/Rain.gif'),rgba(0, 0, 0, 0.3);
+    background-size: 100% 100%;
+  }
+  /* МОЛНИЯ СКИЛЛ */
+  .light_skill{
+    z-index: 10;
+    position: absolute;
+    height: 700px;
+    width: 400px;
+    background: url('../images/Skill/Light.gif') no-repeat ;
+    background-size: 100%  100%;
+  }
+  .light_skill__effect_black {
+    z-index: 10;
+    position: absolute;
+    height: 100%;
+    width: 400%;
+	margin-left: -500px;
+    background:rgba(0, 0, 0, 0.5);
+    background-size: 100% 100%;
+  }
+  .light_skill__effect_white {
+    z-index: 10;
+    position: absolute;
+    height: 100%;
+    width: 400%;
+	margin-left: -500px;
+    background:rgba(255, 255, 255, 0.5);
+    background-size: 100% 100%;
+  }
+  /* МОЛНИЯ СКИЛЛ КОНЕЦ */
+  .storm_skill{
+    z-index: 2;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('../images/Skill/Storm.gif') no-repeat ;
+    background-size: 100%  100%;
+  }
+  .storm_black {
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 400%;
+	margin-left: -500px;
+	background-color: black;
+    background-size: 100% 100%;
+  }
+  /* ПУСТОСТНЫЕ СКИЛЛЫ */
+  .void_slash_skill{
+    z-index: 10;
+    position: absolute;
+    height: 100px;
+    width: 250px;
+    background: url('../images/Skill/Void-slash.gif') no-repeat ;
+    background-size: 100%  100%;
+  }
+  .void_hit_skill{
+    z-index: 10;
+    position: absolute;
+    height: 200px;
+    width: 350px;
+    background: url('../images/Skill/Void-hit.gif') no-repeat ;
+    background-size: 100%  100%;
+  }
+  .void_shield_skill{
+    z-index: 6;
+    position: absolute;
+    height: 185px;
+    width: 185px;
+    background: url('../images/Skill/Void-shield.gif') no-repeat ;
+    opacity: .5;
+    background-size: 100%  100%;
+  }
+  .void_hole_skill{
+    z-index: 2;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  /* ФИЗИЧЕСКИЕ СКИЛЛЫ */
+  .suicide_clone_skill{
+    z-index: 6;
+    position: absolute;
+    height: 160px;
+    width: 450px;
+  }
+
+  /* ОГРОМНЫЙ МЕЧ НАЧАЛО */
+  .gret_sword_portal{
+    z-index: 4;
+    position: absolute;
+    height: 75px;
+    width: 400px;
+    background: url('../images/Skill/Void-portal.gif') no-repeat;
+    background-size: 100% 100%; 
+  }
+  .great_sword_skill{
+    z-index: 5;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  /* ОГРОМНЫЙ МЕЧ КОНЕЦ */
+.KnightIllusion{
+  z-index: 10;
+  position: absolute;
+  height: 162px;
+  width: 420px;
+  background: url('../images/warrior/Attack1.gif') no-repeat;
+  background-size: 100%;
+  margin: 0 auto;
+}
+#stats-window {
+  display: none;
+  position: absolute;
+  z-index: 90;
+  height: 500px;
+  width: 250px;
+  background: url('../images/interface/stats.png') no-repeat;	
+  left: 50px;
+  top: 50px;
+  font-size: 18pt;
+  color: rgb(235, 235, 235);
+}
+
+.stats-window-text {
+  width: 200px;
+  height: 450px;
+  padding: 25px;
+  -moz-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   -o-user-select: none;
+   user-select: none;
+}
+#stats-window p {
+  margin: 0;
+  text-shadow: 1.5px 0 1.5px #000, 
+0 1.5px 1.5px #000, 
+-1.5px 0 1.5px #000, 
+0 -1.5px 1.5px #000;
+}
+#tree-skills{
+display: none;
+position: absolute;
+z-index: 90;
+height: 500px;
+width: 600px;
+background: url('../images/interface/skill-tree.png') no-repeat;	
+right: 50px;
+top: 50px;
+}
+#map-skills{
+z-index: 95;
+overflow: hidden;
+position: absolute;
+background: url('../images/interface/Skill-BG.png') no-repeat;	
+width: 100%;
+height: 100%;	
+}
+#sk-container{
+z-index: 1;
+height: 460px;
+width: 560px;	
+overflow: hidden;
+position: absolute;
+left: 20px;
+bottom: 18px;
+-moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.Sicon{
+position: absolute;
+z-index: 99;
+width: 80px;
+height: 80px;
+left: 2000px;
+bottom: 2000px;
+}
+.Sicon.avail{
+filter: brightness(40%);
+}
+.Sicon.unavail{
+filter: brightness(10%);	
+}
+.Sicon.learn{
+filter: brightness(100%);
+}
+#sp{
+position: absolute;
+z-index: 99;
+left: 250px;
+font-size: 22px;
+background-color: black;
+-moz-user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+
+
+.platform{
+width:200px;
+height:40px;
+position: absolute;
+z-index: 2;
+display: none;
+}
+
+.platform-1{
+background: url('../images/platforms/1 level platform.png') no-repeat;
+background-size: cover;	
+}
+.platform-2{
+  background: url('../images/platforms/2 level platform.png') no-repeat;
+  background-size: cover;	
+  width:200px;
+height:213px;
+  }
+  .platform-3{
+    background: url('../images/platforms/3 level platform.png') no-repeat;
+    background-size: cover;	
+    }
+  .platform-4{
+    background: url('../images/platforms/4 level platform.png') no-repeat;
+    background-size: cover;	
+    }
+  .platform-5{
+    background: url('../images/platforms/5 level platform.png') no-repeat;
+    background-size: 100% 100%;	
+    width: 400px;
+    -webkit-filter: drop-shadow(5px 0px 5px rgb(246, 152, 0));
+    filter: drop-shadow(5px 0px 5px rgb(246, 152, 0)); 
+  }
+    .platform-6{
+    background: url('../images/platforms/6 level platform.png') no-repeat;
+    background-size: 100% 100%;	
+	 width: 300px;
+    }
+
+#ground{
+display: none;
+width: 100%;
+height: 100px;
+position: relative;
+}
+
+
+
+#hpProgress {
+	display: none;
+    background-image: url(../images/interface/HP_progress_bar.png);
+    width: 325px;
+    height: 30px;
+	margin: auto;
+	margin-top: -100px;
+}
+#hpBar {
+    width: 96%;
+    position: relative;
+    bottom: -6px;
+    right: -6px;
+    border-radius: 9px;
+    height: 18px;
+    background-image: url(../images/interface/HP_bar.png);
+}
+
+
+.down_progress_bar {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 325px;
+}
+#mpProgress {
+  display: none;
+  background-image: url(../images/interface/MP_SP_progress_bar.png);
+  width: 160px;
+  height: 30px;
+  margin: auto;
+  margin-top: 3px;
+}
+#mpBar {
+  width: 92%;
+  position: relative;
+  bottom: -6px;
+  right: -6px;
+  border-radius: 9px;
+  height: 18px;
+  background-image: url(../images/interface/MP_bar.png);
+}
+
+#endProgress {
+	display: none;
+  background-image: url(../images/interface/MP_SP_progress_bar.png);
+  width: 160px;
+  height: 30px;
+  margin: auto;
+  margin-top: 3px;
+}
+#endBar {
+  width: 92%;
+  position: relative;
+  bottom: -6px;
+  right: -6px;
+  border-radius: 9px;
+  height: 18px;
+  background-image: url(../images/interface/SP_bar.png);
+}
+
+
+
+/* Описание стилей для игрового поля и находящихся на нем элементов интерфейса */
+#gamefield{
+  position: absolute;
+  z-index: 0;
+  top: 0; left: 0; right: 0; bottom: 0;
+  margin: auto;
+  height: 695px;
+  width: 980px;
+  overflow: hidden;
+  background: url('../images/startBG.png') no-repeat;
+  background-size: 160%;
+  font-family: 'Gecko';
+  font-size: 28pt;
+  color: white;
+  text-shadow: 0px 0px 2px #576f30;
+}
+
+
+#skill-tree-window {
+  display: none;
+  width: 42%;
+  margin: auto;
+}
+#skill-tree-close .close-btn {
+  width: 54px;
+  height: 54px;
+}
+#skill-tree-close {
+  z-index: 99;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: url('../images/interface/close-btn.png') no-repeat;
+}
+/* Описание стилей приветствующей панели */
+#startpanel, #pre_startpanel{
+  display: block;
+  position: absolute;
+  height: 400px;
+  width: 500px;
+  background-color: rgb(89,86,82);
+  border: 5px solid rgb(179,107,62);
+  border-radius: 15px;
+  top: 0; left: 0; right: 0; bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+
+#startbttn{
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgb(89,86,82);
+  border: 5px solid rgb(179,107,62);
+  border-radius: 50px;
+  bottom: 50px; right: 0; left: 0;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+#startbttn.active{
+  transition: .5s;
+  cursor: pointer;
+}
+#startbttn.active:hover{
+  filter: brightness(1.1);
+}
+#startbttn.non-active{
+  filter: opacity(0.5);
+  cursor: not-allowed;
+}
+#startpanel div{
+  text-align: center;
+}
+
+#enemy_kill{
+	z-index: 99;
+	display: none;
+	position: absolute;
+	font-size: 18pt;
+	right: 20px;
+	top: 0px;
+}
+
+#knight{
+	z-index: 5;
+	display:none;
+	background-size: cover;
+	height: 140px;
+	width: 110px;
+	position: absolute;
+	left: 0px;
+	bottom: 50px;
+}
+
+
+#skillPanel{
+    display: block;
+    z-index: 99;
+    position: absolute;
+	bottom: 0px;
+	left: 350px;
+    height: 50px;
+    width: 250px;
+}
+
+#SkillP-1{
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    text-align: center;
+    background-size: cover;
+}
+#SkillP-2{
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    text-align: center;
+    background-size: cover;
+}
+#SkillP-3{
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    text-align: center;
+    background-size: cover;
+}
+#SkillP-4{
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    text-align: center;
+    background-size: cover;
+}
+
+#cooldown{
+	display: none;
+	position: absolute;
+	bottom: 300px;
+	left: 400px;
+}
+
+.dmgTextHero{
+	z-index: 6;
+	position: absolute;
+	font-size: 22px;
+	color: green;
+}
+.dmgTextEnemy{
+	z-index: 6;
+	position: absolute;
+	font-size: 22px;
+	color: red;
+}
+
+.enemy{
+	z-index: 4;
+	background-size: cover;
+	position: absolute;
+	display: block;
+}
+
+
+.enemy.vampire.idle{
+	height: 120px;
+	width: 80px;
+	transform: scaleX(-1);
+}
+.enemy.vampire.idleinv{
+	height: 120px;
+	width: 80px;
+}
+.enemy.vampire.appear{
+	height: 135px;
+	width: 140px;
+	transform: scaleX(-1);
+	margin-left: -25px;
+}
+.enemy.vampire.appearinv{
+	height: 135px;
+	width: 140px;
+	margin-left: -35px;
+}
+.enemy.vampire.run{
+	height: 120px;
+	width: 80px;
+	transform: scaleX(-1);
+}
+.enemy.vampire.runinv{
+	height: 120px;
+	width: 80px;
+}
+.enemy.vampire.attack{
+	height: 135px;
+	width: 215px;
+	transform: scaleX(-1);
+	margin-left: -3px;
+}
+.enemy.vampire.attackinv{
+	height: 135px;
+	width: 215px;
+	margin-left: -132px;
+}
+
+
+.enemy.skeleton.idle{
+	height: 180px;
+	width: 120px;
+	transform: scaleX(-1);
+}
+.enemy.skeleton.idleinv{
+	height: 180px;
+	width: 120px;
+}
+.enemy.skeleton.appear{
+	height: 202px;
+	width: 210px;
+	transform: scaleX(-1);
+	margin-left: -25px;
+}
+.enemy.skeleton.appearinv{
+	height: 202px;
+	width: 210px;
+	margin-left: -35px;
+}
+.enemy.skeleton.run{
+	height: 180px;
+	width: 120px;
+	transform: scaleX(-1);
+}
+.enemy.skeleton.runinv{
+	height: 180px;
+	width: 120px;
+}
+.enemy.skeleton.attack{
+	height: 187px;
+	width: 180px;
+	transform: scaleX(-1);
+	
+	margin-bottom: -9px;
+}
+.enemy.skeleton.attackinv{
+	height: 187px;
+	width: 180px;
+	margin-left: -60px;
+	margin-bottom: -9px;
+}
+
+
+.enemy.golem.idle{
+	height: 220px;
+	width: 220px;
+	transform: scaleX(-1);
+}
+.enemy.golem.idleinv{
+	height: 220px;
+	width: 220px;
+}
+.enemy.golem.appear{
+	height: 310px;
+	width: 220px;
+	transform: scaleX(-1);
+}
+.enemy.golem.appearinv{
+	height: 310px;
+	width: 220px;
+}
+.enemy.golem.run{
+	height: 220px;
+	width: 220px;
+	transform: scaleX(-1);
+}
+.enemy.golem.runinv{
+	height: 220px;
+	width: 220px;
+}
+.enemy.golem.attack{
+	height: 240px;
+	width: 250px;
+	transform: scaleX(-1);
+}
+.enemy.golem.attackinv{
+	height: 240px;
+	width: 250px;
+	margin-left: -30px;
+}
+.enemy.golem.throw{
+	height: 240px;
+	width: 250px;
+	transform: scaleX(-1);
+}
+.enemy.golem.throwinv{
+	height: 240px;
+	width: 250px;
+	margin-left: -30px;
+}
+.rangeGolem{
+	width: 230px;
+	height: 20px;
+	background-color: red;
+	position: absolute;
+}
+.GolemGrenade{
+	width: 80px;
+	height: 80px;
+	position: absolute;
+}
+
+
+.enemy.malakai.idle{
+	height: 160px;
+	width: 160px;
+	margin-bottom: -5px;
+}
+.enemy.malakai.idleinv{
+	height: 160px;
+	width: 160px;
+	transform: scaleX(-1);
+	margin-bottom: -5px;
+}
+.enemy.malakai.run{
+	height: 160px;
+	width: 160px;
+}
+.enemy.malakai.runinv{
+	height: 160px;
+	width: 160px;
+	transform: scaleX(-1);
+}
+.enemy.malakai.attack{
+	height: 220px;
+	width: 270px;
+	margin-bottom: -15px;
+	margin-left: -30px;
+}
+.enemy.malakai.attackinv{
+	height: 220px;
+	width: 270px;
+	transform: scaleX(-1);
+	margin-bottom: -15px;
+	margin-left: -30px;
+}
+.enemy.malakai.appear{
+	height: 200px;
+	width: 200px;
+	margin-bottom: -12px;
+}
+.enemy.malakai.appearinv{
+	height: 200px;
+	width: 200px;
+	transform: scaleX(-1);
+	margin-bottom: -12px;
+}
+.enemy.malakai.throw{
+	height: 200px;
+	width: 180px;
+	margin-bottom: -6px;
+}
+.enemy.malakai.throwinv{
+	height: 200px;
+	width: 180px;
+	transform: scaleX(-1);
+	margin-bottom: -6px;
+}
+.enemy.malakai.spawn{
+	height: 200px;
+	width: 180px;
+	margin-bottom: -6px;
+}
+.enemy.malakai.spawninv{
+	height: 200px;
+	width: 180px;
+	transform: scaleX(-1);
+	margin-bottom: -6px;
+}
+
+.enemy.sphere{
+	position: absolute;
+	width: 70px;
+	height: 70px;
+}
+
+
+#knight.attack{
+	height: 160px;
+	width: auto;
+	margin-left: -100px;
+}
+#knight.attackinv{
+	height: 160px;
+	width: auto;
+	transform: scaleX(-1);
+	margin-left: -150px;
+}
+
+#knight.attack2{
+	height: 260px;
+	width: 360px;
+	margin-left: -80px;
+	margin-bottom: -2px;
+}
+#knight.attack2inv{
+	height: 260px;
+	width: 360px;
+	transform: scaleX(-1);
+	margin-left: -110px;
+	margin-bottom: -2px;
+}
+#subaru {
+  position: absolute;
+  z-index: 99;
+  height: 254px;
+	width: 262px;
+  background-size: cover;
+  top: 325px;
+  left: -20px;
+}
+#knight.damage{
+	background-image: url('../images/warrior/Damage.gif');
+	height: 260px;
+	width: 290px;
+	margin-left: -60px;
+}
+#knight.damageinv{
+	background-image: url('../images/warrior/Damage.gif');
+	height: 260px;
+	width: 290px;
+	transform: scaleX(-1);
+	margin-left: -10px;
+}
+#knight.jump{
+	height: 180px;
+	width: auto;
+	margin-left: -50px;
+	margin-bottom: -10px;
+}
+#knight.jumpinv{
+	height: 180px;
+	width: auto;
+	transform: scaleX(-1);
+	margin-left: -80px;
+	margin-bottom: -10px;
+}
+
+
+#knight.idle{
+	height: auto;
+	width: 210px;
+}
+#knight.idleinv{
+	height: auto;
+	width: 210px;
+	transform: scaleX(-1);
+	margin-left: -50px;
+}
+#knight.die{
+	background-image: url('../images/warrior/Death.gif');
+	height: 165px;
+	width: 480px;
+	margin-left: -140px;
+}
+#knight.dieinv{
+	background-image: url('../images/warrior//Death.gif');
+	height: 165px;
+	width: 480px;
+	transform: scaleX(-1);
+	margin-left: -140px;
+}
+
+#knight.run{
+	height: 160px;
+	width: auto;
+	margin-left: -40px;
+	text-indent: -100vw;
+}
+#knight.runinv{
+	height: 160px;
+	width: auto;
+	transform: scaleX(-1);
+	margin-left: -90px;
+	text-indent: -100vw;
+}
+#knight.roll{
+	width: auto;
+	height: 280px;
+	margin-bottom: -60px;
+	margin-left: -30px;
+}
+#knight.rollinv{
+	height: 280px;
+	width: auto;
+	transform: scaleX(-1);
+	margin-bottom: -60px;
+	margin-left: -170px;
+}
+#knight.lcast{
+	height: auto;
+	width: 310px;
+	margin-left: -64px;
+}
+#knight.lcastinv{
+	height: auto;
+	width: 310px;
+	margin-left: -85px;
+	transform: scaleX(-1);
+}
+#knight.scast{
+	height: auto;
+	width: 210px;
+}
+#knight.scastinv{
+	height: auto;
+	width: 210px;
+	margin-left: -51px;
+	transform: scaleX(-1);
+}
+
+
+
+
+#ship{
+	z-index: 99;
+	display:none;
+	height: 140px;
+	width: 110px;
+	position: absolute;
+	left: 0px;
+	bottom: 50px;
+}
+#ship.right{
+	transform: scaleX(1);
+	height: 200px;
+	width: 140px;
+	margin-bottom: -30px;
+	margin-left: -10px;
+}
+#ship.left{
+	transform: scaleX(-1);
+	height: 200px;
+	width: 140px;
+	margin-bottom: -30px;
+	margin-left: -10px;
+}
+#ship.leftend{
+	transform: scaleX(-1);
+	width: 80px;
+	height: 160px;
+	margin-bottom: -15px;
+	margin-left: 35px;
+}
+#ship.rightend{
+	transform: scaleX(1);
+	width: 80px;
+	height: 160px;
+	margin-bottom: -15px;
+	margin-left: 25px;
+}
+
+.panel-xp,
+.panel-mp {
+    height: 23px;
+    background: grey;
+    margin-bottom: 4px;
+    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+    position: relative;
+	margin-left: 25px;
+	display: none;
+}
+.panel-xp {
+    width: 200px;
+	margin-top: 25px;
+}
+.panel-mp {
+    width: 176px;
+}
+.score-value {
+    width: 100%;
+    height: 100%;
+}
+.panel-xp .score-value {
+    background: #9f000a;
+}
+.panel-mp .score-value {
+    background: #004bb8;
+}
+.score-value span {
+    padding-right: 13px;
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+	font-size: 14pt;
+}
+
+#SkillP-1.ship{
+	border: 2px solid brown;
+}
+#SkillP-2.ship{
+	border: 2px solid brown;
+}
+#shield{
+	width: 140px;
+	height: 140px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(../images/SpaceShip/shield.png);	
+	position: absolute;
+	display: none;
+}
+.meteor{
+	background-image: url(../images/SpaceShip/meteo.png);	
+	background-size: cover;
+	position: absolute;
+	width: 67px;
+	height: 83px;
+}
+.senemy{
+	width: 64px;
+	height: 64px;
+	position: absolute;
+}
+.senemy.en1{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(../images/SpaceShip/Enemy/enemy_1.png);	
+}
+.senemy.en2{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(../images/SpaceShip/Enemy/enemy_2.png);	
+}
+.senemy.en3{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(../images/SpaceShip/Enemy/enemy_3.png);	
+	transform: scaleY(-1);
+}
+.text.mid{
+	width: 500px;
+	height: 400px;
+	margin: 0 auto;
+	margin-top: 100px;
+}

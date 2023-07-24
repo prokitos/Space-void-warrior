@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Главный CSS-файл -->
+
+    <link rel="stylesheet" href="css/master.css">
+    <script type="text/javascript" src="js/main.js" defer></script>
+	
+	<script type="text/javascript" src="js/Warrior.js" defer></script>
+	<script type="text/javascript" src="js/Warrior Animation.js" defer></script>
+	<script type="text/javascript" src="js/Warrior Boss.js" defer></script>
+	<script type="text/javascript" src="js/Warrior Control.js" defer></script>
+	<script type="text/javascript" src="js/Warrior DisplayGIF.js" defer></script>
+	<script type="text/javascript" src="js/Warrior Enemy.js" defer></script>
+	<script type="text/javascript" src="js/Warrior Hitbox.js" defer></script>
+	<script type="text/javascript" src="js/Warrior Level.js" defer></script>
+	<script type="text/javascript" src="js/Warrior SkillTree.js" defer></script>
+	<script type="text/javascript" src="js/Warrior General.js" defer></script>
+	
+	<script type="text/javascript" src="js/SpaceShip.js" defer></script>
+	<script type="text/javascript" src="js/SpaceShip Control.js" defer></script>
+	<script type="text/javascript" src="js/SpaceShip Enemy.js" defer></script>
+	
+		<link rel="shortcut icon" href="images/fav.png">
+    <title>Void Warrior</title>
+  </head>
+  <body> 
+    <!-- Основное игровое поле со всеми элементами -->
+    <main id="gamefield">
+	<div id="ground"></div>
+	
+  <div id="subtitles"></div>
+  <span id="enemy_kill"></span>
+  <div id="end_portal">
+  </div>
+	
+	<div id="stats-window">
+    <div class="stats-window-text">
+      <p id="s-level"></p>
+	  <p id="s-dmg"></p>
+      <p id="s-hp"></p>
+	  <p id="s-mp"></p>
+	  <p id="s-end"></p>
+	  <p id="s-hpreg"></p>
+	  <p id="s-mpreg"></p>
+	  <p id="s-endreg"></p>
+    </div>
+  </div>
+	<div id="tree-skills">
+		<span id="sp"></span>
+		<div id="sk-container">
+		<div id="map-skills"></div>
+		</div>
+    <a id="skill-tree-close"><div class="close-btn"></div></a>
+	</div>
+
+	  <div id="hpProgress">
+	<div id="hpBar"></div>
+	</div>
+  <div class="down_progress_bar">
+	<div id="mpProgress">
+	<div id="mpBar"></div>
+	</div>
+	<div id="endProgress">
+	<div id="endBar"></div>
+	</div>
+</div>
+	  <img id="knight">
+	  <img id="subaru" style="display: none;">
+	  <div id="special">
+	  </div>
+	  <div id="swords">
+	  </div>
+    <div id="skillPanel">
+      <div id="SkillP-1"><div id="cd1"></div> </div>
+      <div id="SkillP-2"><div id="cd2"></div> </div>
+      <div id="SkillP-3"><div id="cd3"></div> </div>
+	  <div id="SkillP-4"><div id="cd4"></div> </div>
+    </div>
+	  <div id="cooldown">
+	  <p>cooldown</p>
+	  </div>
+
+      <!-- Приветствующее окно -->
+      <div id="startpanel" style="display: block;">
+        <div style="margin: 10px 0px;">
+          Добро пожаловать в игру:<br>Space Void Warrior
+        </div>
+        <!-- Кнопка начала игры -->
+        <div id="startbttn" style="margin-top: 100px;"class="active">
+          Начать игру
+        </div>
+      </div>
+      <div id="pre_startpanel" style="display: none;">
+        <div style="margin: 10px 0px;">
+          Выберите режим игры:
+        </div>
+        <!-- Кнопка начала игры -->
+        <div id="startbttn" class="singlenoob active">
+          Одиночная игра
+        </div>
+        <div id="startbttn" class="non-active">
+          Мультиплеер
+        </div>
+        <div id="startbttn" class="singlepro active">
+          Кошмар
+        </div>
+      </div>
+	
+	<img id="ship">
+	<div id="shield"></div>
+	
+	<div class="panel-xp">
+    <div class="score-value" id="hp">
+        <span id="hpv">100</span>
+    </div></div>
+		   
+	<div class="panel-mp">
+    <div class="score-value" id="mp">
+        <span id="mpv">100</span>
+    </div></div>
+	
+	
+    </main>
+
+
+  </body>
+</html>
